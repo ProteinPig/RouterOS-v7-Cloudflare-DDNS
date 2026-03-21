@@ -1,3 +1,10 @@
+Fork自原作者，做了如下修改
+
+1. PPPOE拨号方式取得IPv6
+2. 修改了if的判断逻辑
+3. 增加了dns server，确保解析成功
+
+---
 # RouterOS-v7-Cloudflare-IPV6-DDNS
 ROS v7.15.3 部署Cloudflare的IPV6 DDNS服务的脚本<br>
 ROS v7.15.3 Script for deploying Cloudflare's IPV6 DDNS service
@@ -15,5 +22,5 @@ The actual address is composed of a two-tuples "REAL address, address expires af
 参考文献：<br>
 References:<br>
 https://github.com/kiss2u/ros-cloudflare-ddns/tree/master<br>
-https://www.bilibili.com/video/BV12y411q7q4（纯v4的Cloudflare DDNS教程）<br>
-https://www.cloudrw.com/article/routeros-ddns-cloudflare（此教程存在多处错误，注意鉴别）
+https://www.bilibili.com/video/BV12y411q7q4 （纯v4的Cloudflare DDNS教程）<br>
+https://www.cloudrw.com/article/routeros-ddns-cloudflare （此教程存在多处错误，注意鉴别）
