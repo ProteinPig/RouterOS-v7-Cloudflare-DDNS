@@ -3,6 +3,7 @@ Fork自原作者，做了如下修改
 1. PPPOE拨号方式取得IPv6
 2. 修改了if的判断逻辑
 3. 增加了dns server，确保解析成功
+4. 增加了IPv4的DDNS
 
 ---
 # RouterOS-v7-Cloudflare-IPV6-DDNS
