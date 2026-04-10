@@ -25,10 +25,10 @@
     :local data   "{\"type\":\"AAAA\",\"name\":\"$CFDomain\",\"content\":\"$WanIP6\",\"ttl\":60}"
 
     :if ($ResolvedIP6 != $WanIP6) do={
-    /tool fetch http-method=put mode=https http-header-field=$header http-data=$data url=$url as-value output=user;
-    :delay 2s;
-    /ip dns cache flush;
-    :log info "CF: 成功更新WAN口IPv6公网地址！"
+        /tool fetch http-method=put mode=https http-header-field=$header http-data=$data url=$url as-value output=user;
+        :delay 2s;
+        /ip dns cache flush;
+        :log info "CF: 成功更新WAN口IPv6公网地址！"
     } else={
         :log info ("本机没有启用IPv6或配置不正确")
     }
